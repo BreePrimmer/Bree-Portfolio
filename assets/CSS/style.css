@@ -1,0 +1,24 @@
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/484/048/small/tropical-leaves-hand-drawn-seamless-pattern-botanical-trendy-design-in-pink-and-green-colors-repeating-design-for-fabric-wallpaper-or-wrap-papers-vector.jpg)
+}
+
+.my-work-container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* Referenced W3 Schools https://www.w3schools.com/cssref/pr_background-image.php */
+    /* display: flex; */
+    background-image: url(assets/images/pink-background.webp);
+    background-color: pink;
+    margin: 10px;
+    width: 50%;
+}
+
+.my-work-container .card {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 500px;
+}
