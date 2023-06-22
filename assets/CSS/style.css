@@ -1,24 +1,189 @@
+/* font found from google fonts, the code for this font was also copied from google. 
+   https://fonts.google.com/specimen/Amatic+SC/tester */
+/* how to import font referenced from w3 schools.
+   https://www.w3schools.com/css/css_font_google.asp#:~:text=Of%20course%20you%20can%20style,as%20you%20like%2C%20with%20CSS! */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F46F99;
     background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/484/048/small/tropical-leaves-hand-drawn-seamless-pattern-botanical-trendy-design-in-pink-and-green-colors-repeating-design-for-fabric-wallpaper-or-wrap-papers-vector.jpg)
 }
+
+nav {
+    /* to keep the navbar at the top of the page I referenced stack overflow.
+       https://stackoverflow.com/questions/14390979/how-do-i-keep-a-nav-bar-at-the-top-of-the-page */
+    position: absolute;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    background-color: #F6F3E7;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+} 
+
+nav ul li {
+    padding-right: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 0px;
+    border-right-width: 3px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#F46F99;
+}
+
+.title {
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+.about-me {
+    position: relative;
+    top: 75px;
+    padding: 0px 20px;
+    margin-left: 20px;
+    font-size: 175%;
+    background-color: #F6F3E7;
+    /* background-image: url(https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNi1iYWNrZ3JvdW5kLWFkai0wOF8xLmpwZw.jpg); */
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    /* background-size: 170px 66px; */
+}
+
+.about-me-container {
+    display: flex;
+    height: 350px;
+    margin-top: 65px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    padding-bottom: 0px;
+}
+
+section div p {
+    line-height: 40px;
+    width: 65%;
+    padding: 5px 20px;
+    margin-top: 15px;
+    background-color: #F6F3E7;
+    border-radius: 15px;
+
+}
+
+.about-me-image {
+    width: auto;
+    height: 100%;
+    margin-right: 100px;
+}
+
+.my-image {
+    width: auto;
+    height: 100%;
+    margin-right: 100px;
+    border-style: solid;
+    border-width: 15px;
+    border-radius: 15px;
+    border-color: #F6F3E7
+}
+
+
+
 
 .my-work-container {
     margin: 50px;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+}
+
+.big-card {
+    background-color:#F6F3E7;
+    margin: 10px;
+    padding: 125px 50px;
+    border-radius: 10%
 }
 
 .card {
     /* Referenced W3 Schools https://www.w3schools.com/cssref/pr_background-image.php */
     /* display: flex; */
-    background-image: url(assets/images/pink-background.webp);
-    background-color: pink;
+    background-color: #f6f3e7;
     margin: 10px;
-    width: 50%;
+    padding: 50px;
+    border-radius: 10%
 }
 
 .my-work-container .card {
     display: flex;
     justify-content: space-between;
-    flex: 1 0 500px;
+    flex: 1 0 30%;
 }
+
+.my-work-container .big-card {
+    display: flex;
+    flex: 1 0 40%
+}
+
+
+#border-none {
+    border: 0px;
+}
+
+.contact-me-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    bottom: -800px;
+    height: 140px;
+    width: 100%;
+    background-color: #F6F3E7;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+}
+
+.contact-me {
+    font-size:175%;
+}
+
+.contact-me-boxes {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+
+}
+
+.contact-me-boxes li {
+    padding-right: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 0px;
+    border-right-width: 3px;
+}
+
+.contact-me-boxes li a {
+    text-decoration: none;
+    color: #F46F99;
+}
+
