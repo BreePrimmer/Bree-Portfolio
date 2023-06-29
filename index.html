@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">\
@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- navigation bar at the top of the site. -->
     <nav>
     <!-- body format referenced from Traversy Media on Youtube.
     https://www.youtube.com/watch?v=3YW65K6LcIA&t=1558s -->
@@ -21,7 +22,10 @@
             </ul>
     </nav>
 
+    <!-- Header that says "about me". -->
     <header class="about-me" id="about-me">About Me</header>
+
+    <!-- A container for the about me section, to set up for flexbox CSS. -->
     <section class="about-me-container">
             <div class="about-me-text">
                 <p>Hi! My name is Bree and I'm currently studying to become a full-stack developer!
@@ -37,12 +41,18 @@
             </div>
     </section>
 
+    <!-- Header that says "My Work". -->
     <header class="my-work" id="my-work">My Work</header>
+
     <main>
+        <!-- A container for the my work cards, for flexbox CSS. -->
         <section class="my-work-container">
 
             <div class="big-card">
-                <h2>Password Generator</h2>
+                <!-- I was having trouble getting the link to work.
+                     Referenced sitepoint community.
+                    https://www.sitepoint.com/community/t/how-to-make-h1-h2-etc-as-links/3004 -->
+                <h2><a href="#https://github.com/BreePrimmer/Password-Generator">Password Generator</a></h2>
             </div>
 
             <div class="card" id="code-quiz">
@@ -71,12 +81,14 @@
         </section>
     </main>
 
+    <!-- Contact Me section. -->
     <section class="contact-me-container">
         <header class="contact-me" id="contact-me">Contact Me</header>
             <ul class="contact-me-boxes">
                 <li>Phone Number: 763-442-8987</li>
                 <li>Email: breempri@gmail.com</li>
-                <li id="border-none"><a href="#">Github</li>
+                <li id="border-none"><a href="#https://github.com/BreePrimmer">Github</li>
             </ul>
     </section>
 </body>
+</html>

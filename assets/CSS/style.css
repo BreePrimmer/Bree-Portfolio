@@ -4,12 +4,18 @@
    https://www.w3schools.com/css/css_font_google.asp#:~:text=Of%20course%20you%20can%20style,as%20you%20like%2C%20with%20CSS! */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
+
+
+/* universal selector */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
+/* styles the font for the site and gives a background image to the site. */
 body {
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
@@ -17,6 +23,10 @@ body {
     color: #F46F99;
     background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/484/048/small/tropical-leaves-hand-drawn-seamless-pattern-botanical-trendy-design-in-pink-and-green-colors-repeating-design-for-fabric-wallpaper-or-wrap-papers-vector.jpg)
 }
+
+
+
+/* navigation bar styling. */
 
 nav {
     /* to keep the navbar at the top of the page I referenced stack overflow.
@@ -59,6 +69,10 @@ nav ul li a:hover {
     font-weight: bolder;
 }
 
+
+
+/* About me section styling */
+
 .about-me {
     position: relative;
     top: 75px;
@@ -66,11 +80,9 @@ nav ul li a:hover {
     margin-left: 20px;
     font-size: 175%;
     background-color: #F6F3E7;
-    /* background-image: url(https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkzNi1iYWNrZ3JvdW5kLWFkai0wOF8xLmpwZw.jpg); */
     height: fit-content;
     width: fit-content;
     border-radius: 10px;
-    /* background-size: 170px 66px; */
 }
 
 .about-me-container {
@@ -110,6 +122,9 @@ section div p {
     border-color: #F6F3E7
 }
 
+
+/* My Work cards styling */
+
 .my-work {
     padding: 0px 20px;
     margin-left: 20px;
@@ -119,10 +134,7 @@ section div p {
     height: fit-content;
     width: fit-content;
     border-radius: 10px;
-    
-
 }
-
 
 .my-work-container {
     margin: 10px;
@@ -143,7 +155,6 @@ section div p {
     border-color: #F6F3E7
 }
 
-
 .big-card h2 {
     position: relative;
     top: -75px;
@@ -153,9 +164,17 @@ section div p {
     border-radius: 15px;
 }
 
+.big-card h2 a {
+    text-decoration: none;
+    color:#F46F99
+}
+
 .big-card h2:hover {
-    color: #F6F3E7;
     background-color:#F46F99
+}
+
+.big-card h2 a:hover {
+    color:#F6F3E7
 }
 
 .card {
@@ -193,9 +212,7 @@ section div p {
 }
 
 
-#border-none {
-    border: 0px;
-}
+/* Contact me styling */
 
 .contact-me-container {
     position: relative;
@@ -220,7 +237,6 @@ section div p {
     display: flex;
     justify-content: left;
     list-style-type: none;
-
 }
 
 .contact-me-boxes li {
@@ -238,6 +254,13 @@ section div p {
 
 .contact-me-boxes li a:hover {
     text-decoration: underline;
+}
+
+
+/* Id selectors */
+
+#border-none {
+    border: 0px;
 }
 
 #code-quiz {
@@ -292,11 +315,12 @@ section div p {
     border-width: 10px;
     border-style: solid;
     border-color: #F6F3E7
-
 }
+
 
 /* These are all the media queries to make the page responsive.
    Referred W3 Schools. https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
 @media screen and (max-width: 1256px) {
     .about-me {
         margin: auto;
