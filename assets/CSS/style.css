@@ -50,6 +50,10 @@ nav ul li a {
     color:#F46F99;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 .title {
     font-size: 200%;
     font-weight: bolder;
@@ -82,7 +86,7 @@ nav ul li a {
 
 section div p {
     line-height: 40px;
-    width: 65%;
+    width: 80%;
     padding: 5px 20px;
     margin-top: 15px;
     background-color: #F6F3E7;
@@ -106,30 +110,75 @@ section div p {
     border-color: #F6F3E7
 }
 
+.my-work {
+    padding: 0px 20px;
+    margin-left: 20px;
+    margin-top: 75px;
+    font-size: 175%;
+    background-color: #F6F3E7;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    
 
+}
 
 
 .my-work-container {
-    margin: 50px;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
 }
 
 .big-card {
+    background-image: url(https://techboomers.com/wp-content/uploads/2018/02/how-secure-is-my-password.png);
+    background-size: 750px;
     background-color:#F6F3E7;
     margin: 10px;
     padding: 125px 50px;
-    border-radius: 10%
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #F6F3E7
+}
+
+
+.big-card h2 {
+    position: relative;
+    top: -75px;
+    left: 0px;
+    background-color: #F6F3E7;
+    padding: 0px 20px;
+    border-radius: 15px;
+}
+
+.big-card h2:hover {
+    color: #F6F3E7;
+    background-color:#F46F99
 }
 
 .card {
     /* Referenced W3 Schools https://www.w3schools.com/cssref/pr_background-image.php */
     /* display: flex; */
+    position: relative;
     background-color: #f6f3e7;
     margin: 10px;
     padding: 50px;
     border-radius: 10%
+}
+
+.card h2 {
+    background-color: #F6F3E7;
+    height: fit-content;
+    padding: 0px 20px;
+    border-radius: 15px;
+}
+
+.card h2:hover {
+    color: #F6F3E7;
+    background-color:#F46F99
+    
 }
 
 .my-work-container .card {
@@ -185,5 +234,231 @@ section div p {
 .contact-me-boxes li a {
     text-decoration: none;
     color: #F46F99;
+}
+
+.contact-me-boxes li a:hover {
+    text-decoration: underline;
+}
+
+#code-quiz {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/013/466/834/non_2x/mathematics-seamless-pattern-math-background-vector.jpg);
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #F6F3E7
+}
+
+#simple-puzzle {
+    background-image: url(https://media.istockphoto.com/id/1391097609/vector/seamless-puzzle-piece-background-pattern.jpg?s=612x612&w=0&k=20&c=p1HdhY7QKCn4fDxI3EvPo2P5HHf04b3OPkzcSAnM5pM=);
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #F6F3E7
+}
+
+#advanced-website {
+    background-image: url(https://codersera.com/blog/wp-content/uploads/2021/11/Single-Page-Website-vs-Multi-Page-Website.jpeg);
+    /* Referenced MDN to resize the background image.
+       https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Resizing_background_images */
+    background-size: 450px;
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #F6F3E7
+}
+
+#calculator {
+    background-image: url(https://www.diabetes.co.uk/wp-content/uploads/2022/10/calculator-1.jpg);
+    background-size: 450px;
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #F6F3E7
+}
+
+#chess-game {
+    background-image: url(https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/phpEOTwBm.png);
+    background-size: 700px;
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #F6F3E7
+}
+
+#phone-app {
+    background-image: url(https://helios-i.mashable.com/imagery/articles/036SM7saRgnSGmvT3XNLYXQ/hero-image.fill.size_1200x900.v1623372406.jpg);
+    background-size: 650px;
+    border-radius: 10%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #F6F3E7
+
+}
+
+/* These are all the media queries to make the page responsive.
+   Referred W3 Schools. https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+@media screen and (max-width: 1256px) {
+    .about-me {
+        margin: auto;
+    }
+    
+    .about-me-container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-me-text {
+        margin-left: 190px;
+        padding: 0;
+        width: 100%;
+    }
+    .about-me-image {
+        margin-left: 190px;
+        margin-top: 20px;
+    }
+    .my-work {
+        margin-top: 350px;
+    }
+    .my-work-container {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .about-me-text {
+        margin-left: 150px;
+    }
+    
+    .about-me-image {
+        padding-bottom: 20px;
+    }
+    
+    .my-work {
+        margin: 450px auto 0px;
+    }
+
+    .my-work-container {
+        padding-bottom: 150px;
+        margin-bottom: 150px;
+    }
+
+    .contact-me-container {
+        bottom: -900px
+    }
+}
+
+@media screen and (max-width: 793px) {
+    .about-me-text {
+        margin-left: 125px;
+    }
+    
+    .my-work { 
+        margin: 600px auto 0px;
+    }
+
+    .contact-me-container {
+        bottom: -1050px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        height: 150px;
+    }
+
+    .contact-me-container {
+        height: 175px;
+    }
+
+    .about-me {
+        margin-top: 100px;
+    }
+
+    .about-me-text {
+        margin-left: 90px;
+    }
+
+    .my-work {
+        margin: 700px auto 0px;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    body {
+        width: 100%;
+        margin-right: -100px;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding-bottom: 15px;
+    }
+
+    .my-work {
+        margin: 800px auto 0px;
+    }
+
+    .contact-me-container {
+        bottom: -1500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-me-text {
+        margin-left: 60px;
+    }
+    
+    .my-work {
+        margin: 1050px auto 0px;
+    }
+
+    .contact-me-container {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .my-work {
+        margin: 1300px auto 0px;
+    }
+
+    .contact-me-container {
+        bottom: -1700px;
+    }
+    .contact-me-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-me-boxes li {
+        padding: 10px 0px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .my-image {
+        width: 300px;
+        align-content: center;
+    }
+   
+    .my-work {
+        margin: 1520px auto 0px;
+    }
+    nav {
+        display: block;
+        height: 200px;
+    }
+    nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    nav ul li {
+        border: none;
+    }
 }
 
