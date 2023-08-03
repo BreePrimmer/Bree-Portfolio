@@ -200,6 +200,19 @@ section div p {
     
 }
 
+.card h2 a {
+    text-decoration: none;
+    color:#F46F99
+}
+
+.card h2:hover {
+    background-color:#F46F99
+}
+
+.card h2 a:hover {
+    color:white;
+}
+
 .my-work-container .card {
     display: flex;
     justify-content: space-between;
@@ -271,12 +284,20 @@ section div p {
     border-color: #F6F3E7
 }
 
-#simple-puzzle {
-    background-image: url(https://media.istockphoto.com/id/1391097609/vector/seamless-puzzle-piece-background-pattern.jpg?s=612x612&w=0&k=20&c=p1HdhY7QKCn4fDxI3EvPo2P5HHf04b3OPkzcSAnM5pM=);
+#cat-picker {
+    background-image: url(https://img.freepik.com/free-vector/cat-lover-pattern-background-design_53876-100662.jpg?w=1060&t=st=1690854352~exp=1690854952~hmac=323907895c060d28502766d455cc8248b98f2b75027f4af09ad0bda537ce02a1);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
     border-radius: 10%;
     border-width: 10px;
     border-style: solid;
-    border-color: #F6F3E7
+    border-color: #F6F3E7;
+}
+
+.cat-picker {
+    text-decoration: none;
+    color:#F46F99
 }
 
 #advanced-website {
