@@ -300,11 +300,11 @@ section div p {
     color:#F46F99
 }
 
-#advanced-website {
-    background-image: url(https://codersera.com/blog/wp-content/uploads/2021/11/Single-Page-Website-vs-Multi-Page-Website.jpeg);
+#dnd-character-maker {
+    background-image: url(https://cdn.wallpapersafari.com/58/51/5nRFiS.jpg);
     /* Referenced MDN to resize the background image.
        https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Resizing_background_images */
-    background-size: 450px;
+    background-size: 400px;
     border-radius: 10%;
     border-width: 10px;
     border-style: solid;
